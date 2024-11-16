@@ -522,6 +522,29 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "com.qti.node.watermark",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/camera/components/com.qti.node.watermark.so"],
+			shared_libs: ["libcutils", "libutils", "libcamera_metadata", "libcom.qti.chinodeutils", "libjpeg", "libpng", "libz", "libpiex", "libexpat", "libdng_sdk", "libEGL", "libGLESv2", "libnativewindow", "libft2vendor", "liblog", "libc++", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/camera/components/com.qti.node.watermark.so"],
+			shared_libs: ["libwatermark_shim", "libcutils", "libutils", "libcamera_metadata", "libcom.qti.chinodeutils", "libjpeg", "libpng", "libz", "libpiex", "libexpat", "libdng_sdk", "libEGL", "libGLESv2", "libnativewindow", "libft2vendor", "liblog", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	relative_install_path: "camera/components",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "com.qti.node.xiaomigenderage",
 	owner: "xiaomi",
 	strip: {
@@ -5240,25 +5263,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "com.qti.node.watermark",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/camera/components/com.qti.node.watermark.so"],
-			shared_libs: ["libcutils", "libutils", "libcamera_metadata", "libcom.qti.chinodeutils", "libjpeg", "libpng", "libz", "libpiex", "libexpat", "libdng_sdk", "libEGL", "libGLESv2", "libnativewindow", "libft2vendor", "liblog", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "32",
-	check_elf_files: false,
-	relative_install_path: "camera/components",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libOmxDsdDec",
 	owner: "xiaomi",
 	strip: {
@@ -5284,7 +5288,6 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libOmxVideoDSMode.so"],
-			shared_libs: ["liblog", "libmmosal_vendor", "libutils", "libwfdcommonutils_proprietary", "libwfdmmservice_proprietary", "libbinder", "libwfdutils_proprietary", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "32",
@@ -5763,24 +5766,6 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/camera/components/com.qti.node.photosolid.so"],
 			shared_libs: ["libcamera_metadata", "libcom.qti.chinodeutils", "liblog", "libutils", "libcutils", "libxml2", "lib_denoiser3", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	relative_install_path: "camera/components",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "com.qti.node.watermark",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/camera/components/com.qti.node.watermark.so"],
-			shared_libs: ["libwatermark_shim", "libcutils", "libutils", "libcamera_metadata", "libcom.qti.chinodeutils", "libjpeg", "libpng", "libz", "libpiex", "libexpat", "libdng_sdk", "libEGL", "libGLESv2", "libnativewindow", "libft2vendor", "liblog", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -8383,7 +8368,7 @@ cc_prebuilt_library_shared {
 		none: true,
 	},
 	target: {
-		: {
+		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libsn100u_fw.so"],
 			shared_libs: [ ],
 		},
@@ -10080,57 +10065,6 @@ cc_prebuilt_library_shared {
 	soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
-	name: "vendor.xiaomi.hardware.mlipay@1.0",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.xiaomi.hardware.mlipay@1.0.so"],
-			shared_libs: ["libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.xiaomi.hardware.mlipay@1.1",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.xiaomi.hardware.mlipay@1.1.so"],
-			shared_libs: ["vendor.xiaomi.hardware.mlipay@1.0", "libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.xiaomi.hardware.mtdservice@1.0",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.xiaomi.hardware.mtdservice@1.0.so"],
-			shared_libs: ["libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
 prebuilt_rfsa {
 	name: "dirac_resource",
 	filename: "dirac_resource.dar",
@@ -10712,6 +10646,7 @@ android_app_import {
 	name: "CneApp",
 	owner: "xiaomi",
 	apk: "proprietary/vendor/app/CneApp/CneApp.apk",
+	required: ["CneApp.libvndfwk_detect_jni.qti_vendor_symlink"],
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -10796,6 +10731,17 @@ android_app_import {
 	},
 	privileged: true,
 	product_specific: true,
+}
+
+android_app_import {
+	name: "ImsRcsService",
+	owner: "xiaomi",
+	apk: "proprietary/system_ext/app/ImsRcsService/ImsRcsService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
 }
 
 android_app_import {
@@ -12310,5 +12256,61 @@ cc_prebuilt_binary {
 	},
 	prefer: true,
 	system_ext_specific: true,
+}
+
+install_symlink {
+	name: "libimscamera_jni_libimscamera_jni_symlink64",
+	system_ext_specific: true,
+	installed_location: "priv-app/ims/lib/arm64/libimscamera_jni.so",
+	symlink_target: "/system_ext/lib64/libimscamera_jni.so",
+}
+
+install_symlink {
+	name: "libimsmedia_jni_libimsmedia_jni_symlink64",
+	system_ext_specific: true,
+	installed_location: "priv-app/ims/lib/arm64/libimsmedia_jni.so",
+	symlink_target: "/system_ext/lib64/libimsmedia_jni.so",
+}
+
+install_symlink {
+	name: "libEGL_adreno_libEGL_adreno_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libEGL_adreno.so",
+	symlink_target: "/vendor/lib/egl/libEGL_adreno.so",
+}
+
+install_symlink {
+	name: "libGLESv2_adreno_libGLESv2_adreno_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libGLESv2_adreno.so",
+	symlink_target: "/vendor/lib/egl/libGLESv2_adreno.so",
+}
+
+install_symlink {
+	name: "libq3dtools_adreno_libq3dtools_adreno_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libq3dtools_adreno.so",
+	symlink_target: "/vendor/lib/egl/libq3dtools_adreno.so",
+}
+
+install_symlink {
+	name: "libEGL_adreno_libEGL_adreno_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libEGL_adreno.so",
+	symlink_target: "/vendor/lib64/egl/libEGL_adreno.so",
+}
+
+install_symlink {
+	name: "libGLESv2_adreno_libGLESv2_adreno_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libGLESv2_adreno.so",
+	symlink_target: "/vendor/lib64/egl/libGLESv2_adreno.so",
+}
+
+install_symlink {
+	name: "libq3dtools_adreno_libq3dtools_adreno_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libq3dtools_adreno.so",
+	symlink_target: "/vendor/lib64/egl/libq3dtools_adreno.so",
 }
 
