@@ -660,7 +660,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.audiohalext@1.0 \
     vendor.qti.hardware.bluetooth_sar@1.0 \
     vendor.qti.hardware.bluetooth_sar@1.1 \
-    vendor.qti.hardware.camera.device@1.0_system_ext \
     vendor.qti.hardware.camera.device@2.0 \
     vendor.qti.hardware.camera.device@3.5 \
     vendor.qti.hardware.dsp@1.0 \
