@@ -553,7 +553,6 @@ PRODUCT_PACKAGES += \
     libdiag \
     libdisp-aba \
     libdisplayqos \
-    libdmabufheapsystem \
     libdpmqmihal \
     libdpps \
     libdsi_netctrl \
