@@ -493,16 +493,6 @@ PRODUCT_PACKAGES += \
     libCB \
     libFaceGrade \
     libHalSuperSensorServer \
-    libOmxAacDec \
-    libOmxAlacDec \
-    libOmxAmrDec \
-    libOmxAmrwbplusDec \
-    libOmxApeDec \
-    libOmxEvrcDec \
-    libOmxG711Dec \
-    libOmxQcelp13Dec \
-    libOmxVpp \
-    libOmxWmaDec \
     libOpenCL \
     libOpenCL_adreno \
     libQSEEComAPI \
@@ -668,12 +658,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.vpp@1.3 \
     vendor.qti.memory.pasrmanager@1.0 \
     vendor.qti.power.pasrmanager@1.0 \
-    libOmxDsdDec \
-    libOmxVideoDSMode \
     libadm \
     libadpcmdec \
     libdeccfg \
-    libdsd2pcm \
     libfastcrc \
     libsmwrapper \
     libstagefright_soft_ac4dec \
