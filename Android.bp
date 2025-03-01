@@ -6419,6 +6419,23 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libI420colorconvert",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libI420colorconvert.so"],
+			shared_libs: ["libutils", "libcutils", "libmm-color-convertor", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libQTEEConnector_listener",
 	owner: "xiaomi",
 	strip: {
@@ -7086,6 +7103,41 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libdoc_photo",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libdoc_photo.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libdoc_photo_c++_shared",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libdoc_photo_c++_shared.so"],
+			shared_libs: ["libc", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libdrmfs",
 	owner: "xiaomi",
 	strip: {
@@ -7112,6 +7164,23 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libdrmtime.so"],
 			shared_libs: ["libutils", "libcutils", "libdiag", "liblog", "libQSEEComAPI", "libtime_genoff", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libfastrpc_utf_stub",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libfastrpc_utf_stub.so"],
+			shared_libs: ["libadsprpc", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -7511,6 +7580,40 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libmibokeh_gallery",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libmibokeh_gallery.so"],
+			shared_libs: ["libOpenCL", "liblog", "libz", "libm", "libdl", "libc", ],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libmisr",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libmisr.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libmlipay",
 	owner: "xiaomi",
 	strip: {
@@ -7545,6 +7648,23 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libmm-color-convertor",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libmm-color-convertor.so"],
+			shared_libs: ["libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libmmosal_vendor",
 	stem: "libmmosal",
 	owner: "xiaomi",
@@ -7558,6 +7678,59 @@ cc_prebuilt_library_shared {
 		},
 	},
 	compile_multilib: "64",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libmotion_photo",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libmotion_photo.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libmotion_photo_c++_shared",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libmotion_photo_c++_shared.so"],
+			shared_libs: ["libc", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libmotion_photo_mace",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libmotion_photo_mace.so"],
+			shared_libs: ["libc++_shared", "libm", "libdl", "liblog", "libc", ],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -7813,6 +7986,24 @@ cc_prebuilt_library_shared {
 		},
 	},
 	compile_multilib: "64",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libqvrcamera_client.qti",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libqvrcamera_client.qti.so"],
+			shared_libs: ["liblog", "libcutils", "libutils", "libnativewindow", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -9936,10 +10127,28 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
+	name: "libdsp_streamer_qvrcam_receiver",
+	filename: "libdsp_streamer_qvrcam_receiver.so",
+	owner: "xiaomi",
+	src: "proprietary/vendor/lib/rfsa/adsp/libdsp_streamer_qvrcam_receiver.so",
+	relative_install_path: "adsp",
+	soc_specific: true,
+}
+
+prebuilt_rfsa {
 	name: "libdsp_streamer_skel",
 	filename: "libdsp_streamer_skel.so",
 	owner: "xiaomi",
 	src: "proprietary/vendor/lib/rfsa/adsp/libdsp_streamer_skel.so",
+	relative_install_path: "adsp",
+	soc_specific: true,
+}
+
+prebuilt_rfsa {
+	name: "libeye_tracking_dsp_sample_skel",
+	filename: "libeye_tracking_dsp_sample_skel.so",
+	owner: "xiaomi",
+	src: "proprietary/vendor/lib/rfsa/adsp/libeye_tracking_dsp_sample_skel.so",
 	relative_install_path: "adsp",
 	soc_specific: true,
 }
@@ -9976,6 +10185,24 @@ prebuilt_rfsa {
 	filename: "libproxy_skel.so",
 	owner: "xiaomi",
 	src: "proprietary/vendor/lib/rfsa/adsp/libproxy_skel.so",
+	relative_install_path: "adsp",
+	soc_specific: true,
+}
+
+prebuilt_rfsa {
+	name: "libqvr_cam_dsp_driver_skel",
+	filename: "libqvr_cam_dsp_driver_skel.so",
+	owner: "xiaomi",
+	src: "proprietary/vendor/lib/rfsa/adsp/libqvr_cam_dsp_driver_skel.so",
+	relative_install_path: "adsp",
+	soc_specific: true,
+}
+
+prebuilt_rfsa {
+	name: "libqvr_dsp_driver_skel",
+	filename: "libqvr_dsp_driver_skel.so",
+	owner: "xiaomi",
+	src: "proprietary/vendor/lib/rfsa/adsp/libqvr_dsp_driver_skel.so",
 	relative_install_path: "adsp",
 	soc_specific: true,
 }
@@ -10030,6 +10257,24 @@ prebuilt_rfsa {
 	filename: "libsns_low_lat_stream_skel.so",
 	owner: "xiaomi",
 	src: "proprietary/vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so",
+	relative_install_path: "adsp",
+	soc_specific: true,
+}
+
+prebuilt_rfsa {
+	name: "libtracker_6dof_skel_8150",
+	filename: "libtracker_6dof_skel_8150.so",
+	owner: "xiaomi",
+	src: "proprietary/vendor/lib/rfsa/adsp/libtracker_6dof_skel_8150.so",
+	relative_install_path: "adsp",
+	soc_specific: true,
+}
+
+prebuilt_rfsa {
+	name: "libworker_pool",
+	filename: "libworker_pool.so",
+	owner: "xiaomi",
+	src: "proprietary/vendor/lib/rfsa/adsp/libworker_pool.so",
 	relative_install_path: "adsp",
 	soc_specific: true,
 }
@@ -10544,7 +10789,7 @@ android_app_import {
 dex_import {
 	name: "tcmclient",
 	owner: "xiaomi",
-	jars: ["proprietary/framework/tcmclient.jar"],
+	jars: ["proprietary/system/framework/tcmclient.jar"],
 }
 
 dex_import {
@@ -10650,7 +10895,7 @@ cc_prebuilt_binary {
 	owner: "xiaomi",
 	target: {
 		android_arm64: {
-			srcs: ["proprietary/bin/chargeonlymode"],
+			srcs: ["proprietary/system/bin/chargeonlymode"],
 			shared_libs: ["libbase", "libcutils", "libhidlbase", "liblog", "libutils", "libpng", "android.hardware.health@2.0", "android.hardware.health@2.1", "libc++", "libc", "libm", "libdl", ],
 		},
 	},

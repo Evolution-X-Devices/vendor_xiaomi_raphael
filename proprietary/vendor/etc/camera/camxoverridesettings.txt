@@ -1,10 +1,6 @@
 multiCameraEnable=TRUE
-logInfoMask=0
-overrideLogLevels=0x1
-logWarningMask=0
-logConfigMask=0
-systemLogEnable=TRUE
-traceGroupsEnable=0
+logInfoMask=0x10080
+overrideLogLevels=0x1F
 disablePDAF=FALSE
 disableFocusIndication=1
 enable3ADebugData=FALSE

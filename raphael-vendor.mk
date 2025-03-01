@@ -6,21 +6,21 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/raphael
 
 PRODUCT_COPY_FILES += \
-    vendor/xiaomi/raphael/proprietary/etc/permissions/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml \
-    vendor/xiaomi/raphael/proprietary/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
-    vendor/xiaomi/raphael/proprietary/media/audio/ui/popup_cangmen_down.ogg:$(TARGET_COPY_OUT_SYSTEM)/media/audio/ui/popup_cangmen_down.ogg \
-    vendor/xiaomi/raphael/proprietary/media/audio/ui/popup_cangmen_up.ogg:$(TARGET_COPY_OUT_SYSTEM)/media/audio/ui/popup_cangmen_up.ogg \
-    vendor/xiaomi/raphael/proprietary/media/audio/ui/popup_chilun_down.ogg:$(TARGET_COPY_OUT_SYSTEM)/media/audio/ui/popup_chilun_down.ogg \
-    vendor/xiaomi/raphael/proprietary/media/audio/ui/popup_chilun_up.ogg:$(TARGET_COPY_OUT_SYSTEM)/media/audio/ui/popup_chilun_up.ogg \
-    vendor/xiaomi/raphael/proprietary/media/audio/ui/popup_jijia_down.ogg:$(TARGET_COPY_OUT_SYSTEM)/media/audio/ui/popup_jijia_down.ogg \
-    vendor/xiaomi/raphael/proprietary/media/audio/ui/popup_jijia_up.ogg:$(TARGET_COPY_OUT_SYSTEM)/media/audio/ui/popup_jijia_up.ogg \
-    vendor/xiaomi/raphael/proprietary/media/audio/ui/popup_mofa_down.ogg:$(TARGET_COPY_OUT_SYSTEM)/media/audio/ui/popup_mofa_down.ogg \
-    vendor/xiaomi/raphael/proprietary/media/audio/ui/popup_mofa_up.ogg:$(TARGET_COPY_OUT_SYSTEM)/media/audio/ui/popup_mofa_up.ogg \
-    vendor/xiaomi/raphael/proprietary/media/audio/ui/popup_muqin_down.ogg:$(TARGET_COPY_OUT_SYSTEM)/media/audio/ui/popup_muqin_down.ogg \
-    vendor/xiaomi/raphael/proprietary/media/audio/ui/popup_muqin_up.ogg:$(TARGET_COPY_OUT_SYSTEM)/media/audio/ui/popup_muqin_up.ogg \
-    vendor/xiaomi/raphael/proprietary/media/audio/ui/popup_yingyan_down.ogg:$(TARGET_COPY_OUT_SYSTEM)/media/audio/ui/popup_yingyan_down.ogg \
-    vendor/xiaomi/raphael/proprietary/media/audio/ui/popup_yingyan_up.ogg:$(TARGET_COPY_OUT_SYSTEM)/media/audio/ui/popup_yingyan_up.ogg \
     vendor/xiaomi/raphael/proprietary/product/etc/permissions/telephony_product_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/telephony_product_privapp-permissions-qti.xml \
+    vendor/xiaomi/raphael/proprietary/system/etc/permissions/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml \
+    vendor/xiaomi/raphael/proprietary/system/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
+    vendor/xiaomi/raphael/proprietary/system/media/audio/ui/popup_cangmen_down.ogg:$(TARGET_COPY_OUT_SYSTEM)/media/audio/ui/popup_cangmen_down.ogg \
+    vendor/xiaomi/raphael/proprietary/system/media/audio/ui/popup_cangmen_up.ogg:$(TARGET_COPY_OUT_SYSTEM)/media/audio/ui/popup_cangmen_up.ogg \
+    vendor/xiaomi/raphael/proprietary/system/media/audio/ui/popup_chilun_down.ogg:$(TARGET_COPY_OUT_SYSTEM)/media/audio/ui/popup_chilun_down.ogg \
+    vendor/xiaomi/raphael/proprietary/system/media/audio/ui/popup_chilun_up.ogg:$(TARGET_COPY_OUT_SYSTEM)/media/audio/ui/popup_chilun_up.ogg \
+    vendor/xiaomi/raphael/proprietary/system/media/audio/ui/popup_jijia_down.ogg:$(TARGET_COPY_OUT_SYSTEM)/media/audio/ui/popup_jijia_down.ogg \
+    vendor/xiaomi/raphael/proprietary/system/media/audio/ui/popup_jijia_up.ogg:$(TARGET_COPY_OUT_SYSTEM)/media/audio/ui/popup_jijia_up.ogg \
+    vendor/xiaomi/raphael/proprietary/system/media/audio/ui/popup_mofa_down.ogg:$(TARGET_COPY_OUT_SYSTEM)/media/audio/ui/popup_mofa_down.ogg \
+    vendor/xiaomi/raphael/proprietary/system/media/audio/ui/popup_mofa_up.ogg:$(TARGET_COPY_OUT_SYSTEM)/media/audio/ui/popup_mofa_up.ogg \
+    vendor/xiaomi/raphael/proprietary/system/media/audio/ui/popup_muqin_down.ogg:$(TARGET_COPY_OUT_SYSTEM)/media/audio/ui/popup_muqin_down.ogg \
+    vendor/xiaomi/raphael/proprietary/system/media/audio/ui/popup_muqin_up.ogg:$(TARGET_COPY_OUT_SYSTEM)/media/audio/ui/popup_muqin_up.ogg \
+    vendor/xiaomi/raphael/proprietary/system/media/audio/ui/popup_yingyan_down.ogg:$(TARGET_COPY_OUT_SYSTEM)/media/audio/ui/popup_yingyan_down.ogg \
+    vendor/xiaomi/raphael/proprietary/system/media/audio/ui/popup_yingyan_up.ogg:$(TARGET_COPY_OUT_SYSTEM)/media/audio/ui/popup_yingyan_up.ogg \
     vendor/xiaomi/raphael/proprietary/system_ext/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/dpm/dpm.conf \
     vendor/xiaomi/raphael/proprietary/system_ext/etc/init/dpmd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/dpmd.rc \
     vendor/xiaomi/raphael/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
@@ -724,6 +724,7 @@ PRODUCT_PACKAGES += \
     libGPTEE_vendor \
     libGPreqcancel \
     libGPreqcancel_svc \
+    libI420colorconvert \
     libQTEEConnector_listener \
     libQTEEConnector_vendor \
     libSNPE \
@@ -763,8 +764,11 @@ PRODUCT_PACKAGES += \
     libcvpcpuRev_skel \
     libdataitems \
     libdlbdsservice \
+    libdoc_photo \
+    libdoc_photo_c++_shared \
     libdrmfs \
     libdrmtime \
+    libfastrpc_utf_stub \
     libgarden \
     libgarden_haltests_e2e \
     libgdtap \
@@ -788,9 +792,15 @@ PRODUCT_PACKAGES += \
     libmialgo_sd \
     libmialgoengine \
     libmibokeh_855 \
+    libmibokeh_gallery \
+    libmisr \
     libmlipay \
     libmlipay@1.1 \
+    libmm-color-convertor \
     libmmosal_vendor \
+    libmotion_photo \
+    libmotion_photo_c++_shared \
+    libmotion_photo_mace \
     libmpbase \
     libnetmgr_common \
     libnetmgr_nr_fusion \
@@ -806,6 +816,7 @@ PRODUCT_PACKAGES += \
     libqdma_file_agent \
     libqisl \
     libqseed3 \
+    libqvrcamera_client.qti \
     librcc \
     libremosaiclib \
     libril-qc-hal-qmi \
@@ -936,17 +947,23 @@ PRODUCT_PACKAGES += \
     libdspCV_skel \
     libdsp_streamer_add_constant \
     libdsp_streamer_binning \
+    libdsp_streamer_qvrcam_receiver \
     libdsp_streamer_skel \
+    libeye_tracking_dsp_sample_skel \
     libfastcvadsp \
     libfastcvdsp_skel \
     libhexagon_nn_skel \
     libproxy_skel \
+    libqvr_cam_dsp_driver_skel \
+    libqvr_dsp_driver_skel \
     libscveObjectSegmentation_skel \
     libscveT2T_skel \
     libsnpe_dsp_v65_domains_v2_skel \
     libsnpe_dsp_v66_domains_v2_skel \
     libsns_device_mode_skel \
     libsns_low_lat_stream_skel \
+    libtracker_6dof_skel_8150 \
+    libworker_pool \
     misound_res \
     libmmosal \
     libmmparser_lite \
