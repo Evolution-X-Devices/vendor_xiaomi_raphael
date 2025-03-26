@@ -358,25 +358,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/raphael/proprietary/vendor/firmware/ipa_uc.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_uc.elf \
     vendor/xiaomi/raphael/proprietary/vendor/firmware/ipa_uc.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_uc.mdt \
     vendor/xiaomi/raphael/proprietary/vendor/firmware/tfa98xx.cnt:$(TARGET_COPY_OUT_VENDOR)/firmware/tfa98xx.cnt \
-    vendor/xiaomi/raphael/proprietary/vendor/lib/camera/com.qti.sensormodule.raphael_luxvisions_imx586.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.raphael_luxvisions_imx586.bin \
-    vendor/xiaomi/raphael/proprietary/vendor/lib/camera/com.qti.sensormodule.raphael_luxvisions_ov8856.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.raphael_luxvisions_ov8856.bin \
-    vendor/xiaomi/raphael/proprietary/vendor/lib/camera/com.qti.sensormodule.raphael_luxvisions_s5k3l6.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.raphael_luxvisions_s5k3l6.bin \
-    vendor/xiaomi/raphael/proprietary/vendor/lib/camera/com.qti.sensormodule.raphael_ofilm_imx586.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.raphael_ofilm_imx586.bin \
-    vendor/xiaomi/raphael/proprietary/vendor/lib/camera/com.qti.sensormodule.raphael_ofilm_ov8856.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.raphael_ofilm_ov8856.bin \
-    vendor/xiaomi/raphael/proprietary/vendor/lib/camera/com.qti.sensormodule.raphael_ofilm_s5k3l6.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.raphael_ofilm_s5k3l6.bin \
-    vendor/xiaomi/raphael/proprietary/vendor/lib/camera/com.qti.sensormodule.raphael_sunny_s5k3t2.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.raphael_sunny_s5k3t2.bin \
-    vendor/xiaomi/raphael/proprietary/vendor/lib/camera/com.qti.tuned.default.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.default.bin \
-    vendor/xiaomi/raphael/proprietary/vendor/lib/camera/com.qti.tuned.raphael_luxvisions_imx586.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.raphael_luxvisions_imx586.bin \
-    vendor/xiaomi/raphael/proprietary/vendor/lib/camera/com.qti.tuned.raphael_luxvisions_ov8856.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.raphael_luxvisions_ov8856.bin \
-    vendor/xiaomi/raphael/proprietary/vendor/lib/camera/com.qti.tuned.raphael_luxvisions_s5k3l6.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.raphael_luxvisions_s5k3l6.bin \
-    vendor/xiaomi/raphael/proprietary/vendor/lib/camera/com.qti.tuned.raphael_ofilm_imx586.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.raphael_ofilm_imx586.bin \
-    vendor/xiaomi/raphael/proprietary/vendor/lib/camera/com.qti.tuned.raphael_ofilm_ov8856.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.raphael_ofilm_ov8856.bin \
-    vendor/xiaomi/raphael/proprietary/vendor/lib/camera/com.qti.tuned.raphael_ofilm_s5k3l6.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.raphael_ofilm_s5k3l6.bin \
-    vendor/xiaomi/raphael/proprietary/vendor/lib/camera/com.qti.tuned.raphael_sunny_s5k3t2.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.raphael_sunny_s5k3t2.bin \
-    vendor/xiaomi/raphael/proprietary/vendor/lib/camera/fdconfigpreview.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/fdconfigpreview.bin \
-    vendor/xiaomi/raphael/proprietary/vendor/lib/camera/fdconfigpreviewlite.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/fdconfigpreviewlite.bin \
-    vendor/xiaomi/raphael/proprietary/vendor/lib/camera/fdconfigvideo.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/fdconfigvideo.bin \
-    vendor/xiaomi/raphael/proprietary/vendor/lib/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/fdconfigvideolite.bin \
     vendor/xiaomi/raphael/proprietary/vendor/lib64/camera/com.qti.sensormodule.raphael_luxvisions_imx586.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.raphael_luxvisions_imx586.bin \
     vendor/xiaomi/raphael/proprietary/vendor/lib64/camera/com.qti.sensormodule.raphael_luxvisions_ov8856.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.raphael_luxvisions_ov8856.bin \
     vendor/xiaomi/raphael/proprietary/vendor/lib64/camera/com.qti.sensormodule.raphael_luxvisions_s5k3l6.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.raphael_luxvisions_s5k3l6.bin \
@@ -417,57 +398,6 @@ PRODUCT_PACKAGES += \
     libgui_shim_miuicamera \
     libmicampostproc_client \
     vendor.xiaomi.hardware.campostproc@1.0 \
-    android.hardware.camera.provider@2.4-external \
-    android.hardware.camera.provider@2.4-legacy \
-    camera.device@1.0-impl \
-    camera.device@3.2-impl \
-    camera.device@3.3-impl \
-    camera.device@3.4-external-impl \
-    camera.device@3.4-impl \
-    camera.device@3.5-external-impl \
-    camera.device@3.5-impl \
-    camera.device@3.6-external-impl \
-    com.qti.sensor.imx586_raphael \
-    com.qti.sensor.ov8856_raphael \
-    com.qti.sensor.s5k3l6_raphael \
-    com.qti.sensor.s5k3t2_raphael \
-    com.almalence.node.sr \
-    com.altek.node.depurple \
-    com.qti.camx.chiiqutils \
-    com.qti.eisv2 \
-    com.qti.eisv3 \
-    com.qti.hvx.addconstant \
-    com.qti.hvx.binning \
-    com.qti.node.depth \
-    com.qti.node.dummyrtb \
-    com.qti.node.dummysat \
-    com.qti.node.eisv2 \
-    com.qti.node.eisv3 \
-    com.qti.node.fcv \
-    com.qti.node.gpu \
-    com.qti.node.memcpy \
-    com.qti.node.remosaic \
-    com.qti.node.stich \
-    com.qti.node.swregistration \
-    com.qti.node.watermark \
-    com.qti.node.xiaomigenderage \
-    com.qti.stats.aec \
-    com.qti.stats.af \
-    com.qti.stats.afd \
-    com.qti.stats.asd \
-    com.qti.stats.awb \
-    com.qti.stats.awbwrapper \
-    com.qti.stats.haf \
-    com.qti.stats.localhistogram \
-    com.qti.stats.pdlib \
-    com.qti.stats.pdlibsony \
-    com.qti.stats.pdlibwrapper \
-    com.qtistatic.stats.aec \
-    com.qtistatic.stats.af \
-    com.qtistatic.stats.awb \
-    com.qtistatic.stats.pdlib \
-    com.visidon.node.clearshot \
-    libdepthmapwrapper \
     com.qualcomm.qti.dpm.api@1.0_vendor \
     eglSubDriverAndroid \
     libEGL_adreno \
@@ -477,14 +407,11 @@ PRODUCT_PACKAGES += \
     libq3dtools_adreno \
     libq3dtools_esx \
     android.hardware.bluetooth@1.0-impl-qti \
-    android.hardware.camera.provider@2.4-impl \
     android.hardware.gatekeeper@1.0-impl-qti \
     android.hardware.gnss@2.1-impl-qti \
     android.hardware.soundtrigger@2.2-impl \
     android.hardware.soundtrigger@2.3-impl \
     audio.primary.msmnile \
-    camera.qcom \
-    com.qti.chi.override \
     sound_trigger.primary.msmnile \
     vendor.qti.hardware.audiohalext@1.0-impl \
     vendor.qti.hardware.bluetooth_sar@1.1-impl \
@@ -496,16 +423,10 @@ PRODUCT_PACKAGES += \
     vulkan.adreno \
     libC2D2 \
     libCB \
-    libFaceGrade \
-    libHalSuperSensorServer \
     libOpenCL \
     libOpenCL_adreno \
     libQSEEComAPI \
-    libSuperSensor \
-    libSuperSensorCPU \
-    libVDClearShot \
     libVkLayer_q3dtools \
-    libXMFD_AgeGender \
     libacdb-fts \
     libacdbloader \
     libacdbrtac \
@@ -514,11 +435,6 @@ PRODUCT_PACKAGES += \
     libadreno_utils \
     libadsp_default_listener \
     libadsprpc \
-    libalAILDC \
-    libalCFR \
-    libalLDC \
-    libalRnBRT_GL_GBWRAPPER \
-    libalhLDC \
     libaudcal \
     libaudio_log_utils \
     libaudioconfigstore \
@@ -528,19 +444,8 @@ PRODUCT_PACKAGES += \
     libbt-hidlclient \
     libbtnv \
     libc2d30_bltlib \
-    libcamera2ndk_vendor \
-    libcamera_nn_stub \
-    libcamxfdalgov7 \
-    libcamxfdalgov8 \
-    libcamxfdengine \
-    libcamxstatscore \
-    libcamxswprocessalgo \
-    libcamxtintlessalgo \
-    libcapiv2svacnn \
-    libcapiv2vop \
     libcdsp_default_listener \
     libcdsprpc \
-    libcom.qti.chinodeutils \
     libconfigdb \
     libcpion \
     libdapparamstorage \
@@ -553,7 +458,6 @@ PRODUCT_PACKAGES += \
     libdsutils \
     libfastcvdsp_stub \
     libfastcvopt \
-    libft2vendor \
     libgcs-calwrapper \
     libgcs-ipc \
     libgcs-osal \
@@ -563,7 +467,6 @@ PRODUCT_PACKAGES += \
     libgps.utils \
     libgpudataproducer \
     libgsl \
-    libgui_vendor \
     libidl \
     libkcl \
     libkernelmanager \
@@ -578,9 +481,6 @@ PRODUCT_PACKAGES += \
     liblocation_api \
     libmdmdetect \
     libmdsprpc \
-    libmialgo_fs \
-    libmialgo_rfs \
-    libmialgo_utils \
     libminkdescriptor \
     libminksocket \
     libmivendor_module_calibration \
@@ -588,7 +488,6 @@ PRODUCT_PACKAGES += \
     libmivendor_module_motor \
     libmm-hdcpmgr \
     libmulawdec \
-    libnanopb \
     libnetmgr \
     libnpu \
     liboemcrypto \
@@ -614,7 +513,6 @@ PRODUCT_PACKAGES += \
     libqsocket \
     libqtigef \
     libqtikeymaster4 \
-    libremosaic_daemon \
     libscveCommon \
     libscveCommon_stub \
     libscveObjectSegmentation \
@@ -622,13 +520,10 @@ PRODUCT_PACKAGES += \
     libscveObjectTracker \
     libscveObjectTracker_stub \
     libsdsprpc \
-    libsns_device_mode_stub \
     libsns_fastRPC_util \
     libsnsapi \
     libspcom \
     libssrec \
-    libswregistrationalgo \
-    libsysmon_cdsp_skel \
     libthermalclient \
     libtinycompress \
     libtrustedapploader \
@@ -654,8 +549,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.audiohalext@1.0 \
     vendor.qti.hardware.bluetooth_sar@1.0 \
     vendor.qti.hardware.bluetooth_sar@1.1 \
-    vendor.qti.hardware.camera.device@2.0 \
-    vendor.qti.hardware.camera.device@3.5 \
     vendor.qti.hardware.dsp@1.0 \
     vendor.qti.hardware.fm@1.0_vendor \
     vendor.qti.hardware.vpp@1.1 \
@@ -674,6 +567,12 @@ PRODUCT_PACKAGES += \
     libswgamedap \
     libswvqe \
     libxlog \
+    com.qti.sensor.imx586_raphael \
+    com.qti.sensor.ov8856_raphael \
+    com.qti.sensor.s5k3l6_raphael \
+    com.qti.sensor.s5k3t2_raphael \
+    com.almalence.node.sr \
+    com.altek.node.depurple \
     com.altek.node.distortioncorrection \
     com.arcsoft.node.bodyslim \
     com.arcsoft.node.capturebokeh \
@@ -688,13 +587,48 @@ PRODUCT_PACKAGES += \
     com.arcsoft.node.smooth_transition \
     com.arcsoft.node.superlowlight \
     com.mi.node.aiasd \
+    com.qti.camx.chiiqutils \
+    com.qti.eisv2 \
+    com.qti.eisv3 \
+    com.qti.hvx.addconstant \
+    com.qti.hvx.binning \
+    com.qti.node.depth \
+    com.qti.node.dummyrtb \
+    com.qti.node.dummysat \
+    com.qti.node.eisv2 \
+    com.qti.node.eisv3 \
+    com.qti.node.fcv \
+    com.qti.node.gpu \
+    com.qti.node.memcpy \
     com.qti.node.photosolid \
+    com.qti.node.remosaic \
+    com.qti.node.stich \
+    com.qti.node.swregistration \
+    com.qti.node.watermark \
+    com.qti.node.xiaomigenderage \
+    com.qti.stats.aec \
+    com.qti.stats.af \
+    com.qti.stats.afd \
+    com.qti.stats.asd \
+    com.qti.stats.awb \
+    com.qti.stats.awbwrapper \
+    com.qti.stats.haf \
     com.qti.stats.hafoverride \
+    com.qti.stats.localhistogram \
+    com.qti.stats.pdlib \
+    com.qti.stats.pdlibsony \
+    com.qti.stats.pdlibwrapper \
+    com.qtistatic.stats.aec \
+    com.qtistatic.stats.af \
+    com.qtistatic.stats.awb \
+    com.qtistatic.stats.pdlib \
     com.vidhance.node.eis \
     com.vidhance.stats.aec_dmbr \
+    com.visidon.node.clearshot \
     com.xiaomi.node.mibokeh \
     com.xiaomi.node.mifragment \
     com.xiaomi.node.misegment \
+    libdepthmapwrapper \
     com.qualcomm.qti.imscmservice@1.0 \
     com.qualcomm.qti.imscmservice@2.0 \
     com.qualcomm.qti.imscmservice@2.1 \
@@ -703,6 +637,8 @@ PRODUCT_PACKAGES += \
     com.qualcomm.qti.uceservice@2.1 \
     com.qualcomm.qti.uceservice@2.2 \
     deviceInfoServiceModule \
+    camera.qcom \
+    com.qti.chi.override \
     fingerprint.goodix_fod.msmnile \
     vendor.qti.gnss@4.0-impl \
     vendor.qti.hardware.alarm@1.0-impl \
@@ -725,17 +661,28 @@ PRODUCT_PACKAGES += \
     lib-rtpsl \
     lib-siputility \
     lib-uceservice \
+    libFaceGrade \
     libGPQTEEC_vendor \
     libGPTEE_vendor \
     libGPreqcancel \
     libGPreqcancel_svc \
+    libHalSuperSensorServer \
     libI420colorconvert \
     libQTEEConnector_listener \
     libQTEEConnector_vendor \
     libSNPE \
     libSecureUILib \
     libStDrvInt \
+    libSuperSensor \
+    libSuperSensorCPU \
+    libVDClearShot \
+    libXMFD_AgeGender \
     lib_denoiser3 \
+    libalAILDC \
+    libalCFR \
+    libalLDC \
+    libalRnBRT_GL_GBWRAPPER \
+    libalhLDC \
     libaoa \
     libarcsat \
     libarcsoft_beautyshot \
@@ -755,14 +702,25 @@ PRODUCT_PACKAGES += \
     libarcsoft_supernight \
     libc++_shared \
     libcacertclient \
+    libcamera2ndk_vendor \
+    libcamera_nn_stub \
     libcamera_scene \
+    libcamxfdalgov7 \
+    libcamxfdalgov8 \
+    libcamxfdengine \
     libcamxlocalhistogramalgo \
+    libcamxstatscore \
+    libcamxswprocessalgo \
+    libcamxtintlessalgo \
+    libcapiv2svacnn \
+    libcapiv2vop \
     libcdfw \
     libcdfw_remote_api \
     libcne \
     libcneapiclient \
     libcneoplookup \
     libcneqmiutils \
+    libcom.qti.chinodeutils \
     libcvp \
     libcvp_common \
     libcvp_stub \
@@ -774,11 +732,13 @@ PRODUCT_PACKAGES += \
     libdrmfs \
     libdrmtime \
     libfastrpc_utf_stub \
+    libft2vendor \
     libgarden \
     libgarden_haltests_e2e \
     libgdtap \
     libgf_hal \
     libgnsspps \
+    libgui_vendor \
     libhdr_tm \
     libhexagon_nn_stub \
     libhta_hexagon_runtime \
@@ -794,7 +754,10 @@ PRODUCT_PACKAGES += \
     liblowi_wifihal \
     liblqe \
     libmdmimgload \
+    libmialgo_fs \
+    libmialgo_rfs \
     libmialgo_sd \
+    libmialgo_utils \
     libmialgoengine \
     libmibokeh_855 \
     libmibokeh_gallery \
@@ -807,6 +770,7 @@ PRODUCT_PACKAGES += \
     libmotion_photo_c++_shared \
     libmotion_photo_mace \
     libmpbase \
+    libnanopb \
     libnetmgr_common \
     libnetmgr_nr_fusion \
     libnetmgr_rmnet_ext \
@@ -823,6 +787,7 @@ PRODUCT_PACKAGES += \
     libqseed3 \
     libqvrcamera_client.qti \
     librcc \
+    libremosaic_daemon \
     libremosaiclib \
     libril-qc-hal-qmi \
     libril-qc-logger \
@@ -844,6 +809,7 @@ PRODUCT_PACKAGES += \
     libslimclient \
     libsn100u_fw \
     libsnpe_dsp_domains_v2 \
+    libsns_device_mode_stub \
     libsns_low_lat_stream_stub \
     libsns_registry_skel \
     libsnsdiaglog \
@@ -852,6 +818,8 @@ PRODUCT_PACKAGES += \
     libssc_default_listener \
     libssccalapi \
     libssd \
+    libswregistrationalgo \
+    libsysmon_cdsp_skel \
     libsystem_health_mon \
     libtime_genoff \
     libtinyxml2_1 \
@@ -888,6 +856,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.gnss@4.0 \
     vendor.qti.hardware.alarm@1.0_vendor \
     vendor.qti.hardware.cacert@1.0 \
+    vendor.qti.hardware.camera.device@2.0 \
+    vendor.qti.hardware.camera.device@3.5 \
     vendor.qti.hardware.data.cne.internal.api@1.0 \
     vendor.qti.hardware.data.cne.internal.constants@1.0 \
     vendor.qti.hardware.data.cne.internal.server@1.0 \
@@ -1027,7 +997,6 @@ PRODUCT_PACKAGES += \
     garden_app \
     hvdcp_opti \
     android.hardware.bluetooth@1.0-service-qti \
-    android.hardware.camera.provider@2.4-service_64 \
     android.hardware.drm@1.3-service.widevine \
     android.hardware.gatekeeper@1.0-service-qti \
     android.hardware.gnss@2.1-service-qti \
