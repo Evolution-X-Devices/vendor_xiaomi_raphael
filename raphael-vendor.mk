@@ -292,6 +292,7 @@ PRODUCT_PACKAGES += \
     libmialgo_rfs \
     libmialgo_sd \
     libmialgo_utils \
+    libmialgoengine \
     libmibokeh_855 \
     libmivendor_module_calibration \
     libmivendor_module_hall \
@@ -305,6 +306,8 @@ PRODUCT_PACKAGES += \
     libsnsapi \
     libsnsdiaglog \
     libssc \
+    libswregistrationalgo \
+    libsymphony-cpu \
     libtriplecam_video_optical_zoom \
     libultrasound \
     libvidhance \
@@ -343,5 +346,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.sensorscalibrate@1.0-service \
     vendor.xiaomi.hardware.motor@1.0-service \
     init.qcom.sensors \
+    remosaic_daemon \
     sensors.qti \
     sscrpcd
