@@ -4,6 +4,7 @@
 
 soong_namespace {
     imports: [
+        "device/xiaomi/raphael",
         "hardware/qcom-caf/common/libqti-perfd-client",
         "hardware/qcom-caf/sm8150",
         "hardware/xiaomi",
@@ -3892,6 +3893,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libmpbase.so",
             ],
             shared_libs: [
+                "libmpbase_shim",
                 "libc",
             ],
         },
