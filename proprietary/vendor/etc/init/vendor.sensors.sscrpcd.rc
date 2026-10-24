@@ -34,4 +34,7 @@ service vendor.sensors /vendor/bin/sscrpcd sensorspd
     user system
     group system wakelock
     capabilities BLOCK_SUSPEND
+    # The fastrpc default search path. Set it so apps_std stops logging a
+    # failed getenv on every file it opens (the backlight, several times a second).
+    setenv ADSP_LIBRARY_PATH ";/vendor/lib/rfsa/adsp;/vendor/lib/rfsa/dsp;/vendor/dsp"
 
